@@ -24,12 +24,9 @@ app.get("/api/status", (req, res) => {
           let wanip =
             sslDev.services["urn:dslforum-org:service:WLANConfiguration:1"];
           wanip.actions.GetInfo(function (err, result) {
-            console.log(result.NewEnable);
-            console.log(result);
             if (err === null) {
               res.json(result.NewEnable);
             } else {
-              console.log(err);
               res.status(500).send();
             }
           });
@@ -48,12 +45,9 @@ app.get("/api/on", (req, res) => {
           let wanip =
             sslDev.services["urn:dslforum-org:service:WLANConfiguration:1"];
           wanip.actions.SetEnable({ NewEnable: true }, function (err, result) {
-            console.log(result);
-
             if (err === null) {
               res.status(200).send();
             } else {
-              console.log(err);
               res.status(500).send();
             }
           });
@@ -72,12 +66,9 @@ app.get("/api/off", (req, res) => {
           let wanip =
             sslDev.services["urn:dslforum-org:service:WLANConfiguration:1"];
           wanip.actions.SetEnable({ NewEnable: false }, function (err, result) {
-            console.log(result);
-
             if (err === null) {
               res.status(200).send();
             } else {
-              console.log(err);
               res.status(500).send();
             }
           });
