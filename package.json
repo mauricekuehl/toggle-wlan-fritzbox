@@ -1,0 +1,23 @@
+{
+  "name": "toggle-wlan-fritzbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauricekuehl/toggle-wlan-fritzbox.git"
+  },
+  "author": "Maurice Kuehl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mauricekuehl/toggle-wlan-fritzbox/issues"
+  },
+  "homepage": "https://github.com/mauricekuehl/toggle-wlan-fritzbox#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "tr-064": "^0.2.0"
+  }
+}
